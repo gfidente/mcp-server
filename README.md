@@ -6,7 +6,7 @@ This server is written using [FastMCP](https://github.com/jlowin/fastmcp) and ex
 
 ## how to try and test it ?
 
-My approach has been to try this using the IBM's granite3.1-dense model - which is designed to support tool-based use cases. For example, to run granite3.1-dense using ollama:
+My approach has been to try this using the IBM's granite3.1-dense model - which is designed to support tool-based use cases. For example, to run granite3.1-dense using ollama and connect it with the calculator.py MCP server:
 
 1. Install ollama, as per https://github.com/ollama/ollama/blob/main/docs/linux.md
 
