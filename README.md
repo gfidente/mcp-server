@@ -20,7 +20,7 @@ ollama serve
 ollama pull granite3.1-dense:2b
 ```
 
-4. Download and install the MCP server with its dependencies:
+4. Download and install the MCP server with its dependencies in a virtual env:
 ```
 git clone https://github.com/gfidente/mcp-server.git
 cd mcp-server
