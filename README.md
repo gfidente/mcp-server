@@ -10,14 +10,14 @@ My approach has been to try this using the IBM's granite3.1-dense model - which 
 
 1. Install ollama, as per https://github.com/ollama/ollama/blob/main/docs/linux.md
 
-2. Pull the model:
-```
-ollama pull granite3.1-dense:2b
-```
-
-3. Start serving it:
+2. Start the ollama service:
 ```
 ollama serve
+```
+
+3. Pull the model:
+```
+ollama pull granite3.1-dense:2b
 ```
 
 4. Download and install the MCP server with its dependencies:

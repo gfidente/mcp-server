@@ -1,4 +1,4 @@
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 mcp = FastMCP("MCP Calculator Server")
 
 
@@ -36,7 +36,7 @@ def power(a: int, b: int) -> int:
 @mcp.tool()
 def remainder(a: int, b: int) -> int:
     """Remainder of two numbers divison"""
-    return int(a % b)A
+    return int(a % b)
 
 
 # execute using stdio for testing with local clients
