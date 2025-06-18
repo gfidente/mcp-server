@@ -4,6 +4,36 @@ This is my attempt at writing a basic MCP server to experiment with the use of [
 
 This server is written using [FastMCP](https://github.com/jlowin/fastmcp) and exports for consumption as Tools some basic math functions.
 
+## how does it work ?
+
+A typical convesaration, showing the available functions would look like this:
+```
+Query: hello there, I am Giulio. What can you do for me?
+Answer:
+
+Hello Giulio! I'm an AI, and I can help with a variety of tasks using the functions you've provided as a calculator. Here are some things I can do:
+
+ 1 Addition: calculator.add(a, b) - This will return the sum of numbers 'a' and 'b'.
+ 2 Subtraction: calculator.subtract(a, b) - This will return the difference between 'a' and 'b'.
+ 3 Multiplication: calculator.multiply(a, b) - This will return the product of 'a' and 'b'.
+ 4 Division: calculator.divide(a, b) - This will return the quotient of 'a' divided by 'b', provided that 'b' is not zero.
+ 5 Exponentiation: calculator.power(a, b) - This will return 'a' raised to the power of 'b'.
+ 6 Remainder: calculator.remainder(a, b) - This will return the remainder when 'a' is divided by 'b'.
+
+Please provide me with the numbers and operation you'd like to perform, using these function names along with their respective parameters.
+
+Query: Great, can you calculate the power of 4 by 4?
+Answer:
+
+Absolutely! Using the calculator.power function:
+
+
+ calculator.power(4, 4)
+
+
+The result is 256. This is because 4 raised to the power of 4 equals 256.
+```
+
 ## how to try and test it ?
 
 My approach has been to try this using the IBM's granite3.1-dense model - which is designed to support tool-based use cases. For example, to run granite3.1-dense using ollama and connect it with the calculator.py MCP server:
